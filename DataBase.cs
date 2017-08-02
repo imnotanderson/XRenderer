@@ -4,7 +4,7 @@
     using System.Collections.Generic;
     using UnityEngine;
 
-    internal abstract class DataBase<T> :IData where T : MonoBehaviour 
+    public abstract class DataBase<T> :IData where T : MonoBehaviour 
     {
         protected T mono;
         private Queue<Action> quque = new Queue<Action>();
